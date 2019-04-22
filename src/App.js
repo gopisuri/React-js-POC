@@ -1,26 +1,30 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+//import ChildComponent from './Greet.js';
+import Button from '@material-ui/core/Button';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 class App extends Component {
+  
   render() {
+    var divStyle = {
+      "margin-left": "400px",
+     "margin-top": "30px"
+     };
+     var wdth ={
+      width: '176px'
+     }
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+    
+      <div class ="aligner">
+        <span>
+   <Link to="/releasemanagement"> <button  type="button" class="btn btn-success">ReleaseManagement</button></Link>
+   <Link to = "/componentversion"> <button  type="button" class="btn btn-success">ComponentVersion</button></Link>
+    </span>
+         </div>
+         
+
+     
     );
   }
 }

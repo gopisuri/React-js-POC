@@ -22,7 +22,17 @@
 .App-link {
   color: #61dafb;
 }
+.alignment{
+  margin-bottom:50px;
+}
 
+.aligner{
+  margin-left: 950px;
+    margin-top: 10px;
+}
+.pos{
+margin-bottom: 30px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -31,3 +41,4 @@
     transform: rotate(360deg);
   }
 }
+
